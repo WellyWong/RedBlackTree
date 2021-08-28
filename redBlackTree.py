@@ -317,10 +317,10 @@ class RedBlackTree:
             else:
                 print("[]")
 
-    #We'll height function to get max depth of the tree, to print tree diagram horizontally
+    #We'll need this height method to get max depth of the tree, for printing out a tree diagram horizontally
     def height(self, node):
         if node is self.nil:
-            return 0       #this will make the leaf node height = 0
+            return 0
         else:
             l_height = self.height(node.left)
             r_height = self.height(node.right)
